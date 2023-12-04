@@ -26,8 +26,27 @@
         </div>
     </header>  
 
-    <main>
-        
+    <main class="container d-flex justify-content-center form-signin w-100 m-auto">
+        <form class="w-50 d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-center">
+                <img class="align-items-center d-flex" src="img/acceso.png" alt="" width="72" height="72">
+            </div>  
+            <div>
+                <h1 class="h3 fw-normal text-center">Iniciar sesion</h1>
+            </div>    
+            <div class="form-floating py-2 px-4">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                <label class="px-5" for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating py-2 px-4">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label class="px-5" for="floatingPassword">Contraseña</label>
+            </div>
+            <div class="py-2 d-flex justify-content-center">
+                <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit">Iniciar sesion</button>
+                <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit"><a class="nav-link" href="crearCuenta.html">Crear cuenta</a></button>
+            </div>
+        </form>
     </main>
 
     <footer>
