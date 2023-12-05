@@ -11314,6 +11314,11 @@ body footer {
   color: black;
 }
 
+.modal {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 1000px) {
   body header {
     display: flex;
