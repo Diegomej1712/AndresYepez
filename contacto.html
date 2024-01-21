@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SASS/styles.css">
+    <title>BiblioUSM</title>
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="headerBt d-flex justify-content-center py-3 mb-3 navbar">
+                <div class="bi">
+                    <img src="img/menu-hamburguesa.png" alt="menu" class="bi me-2" width="32" height="32">
+                </div>
+                <div>
+                    <a href="principal.html" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <span class="fs-4">BiblioUSM</span>
+                    </a>
+                </div>
+        
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="principal.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link active" aria-current="page">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>  
+
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="contacto w-25">
+            <div class="d-flex justify-content-center">
+                <img class="align-items-center d-flex m-3" src="img/acceso.png" alt="" width="120" height="120">
+            </div>  
+            <div class="d-flex justify-content-center">
+                <h4>Andres Yepez</h4>
+            </div>
+            <div>
+                <p class="text-center">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repellendus laudantium reprehenderit 
+                    voluptates eveniet, maiores accusamus! Ipsum ea maiores quam error. Cumque blanditiis velit ad deserunt 
+                    expedita dolorum dolorem nostrum.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal" id="menuModal">
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3 my-4">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                  <!--  <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                    </a> -->
+                    <span class="mb-3 mb-md-0 text-body-secondary fontsizeTitle">&copy; Andres Yepez V-</span>
+                </div>
+          
+                <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/instagram.png" alt="instagram" style="width: 30px;"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/twitter.png" alt="twitter" style="width: 30px;"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="img/whatsapp.png" alt="whatsapp" style="width: 30px;"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+</body>
+</html>
