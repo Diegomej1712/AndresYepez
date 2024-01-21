@@ -55,10 +55,9 @@ function modal() {
                             <img src="img/cerrar.png" alt="close" class="close" height="32px" width="32px">
                         </div>
                         <div class="text-center">
-                            <h5><a href="index.html" class="nav-link py-2">Inicio</a></h5>
+                            <h5><a href="principal.html" class="nav-link py-2">Inicio</a></h5>
                             <h5><a href="biblioteca.html" class="nav-link py-2">Biblioteca</a></h5>
                             <h5><a href="contacto.html" class="nav-link py-2">Contacto</a></h5>
-                            <h5><a href="iniciarSesion.html" class="nav-link py-2">Iniciar sesión</a></h5>
                         </div>
                     </div>
                 </div>

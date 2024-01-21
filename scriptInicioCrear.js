@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function()
 {
     const formResponsive = document.querySelector('.formResponsive');
     const buttonResponsive = document.querySelector('.buttonResponsive');
+    const loginButton = document.getElementById('loginButton');
 
     // Función para manejar cambios en el tamaño de la ventana
     function handleWindowSize() 
@@ -25,9 +26,32 @@ document.addEventListener("DOMContentLoaded", function()
         } 
     }
 
+    loginButton.addEventListener("click", function() {
+        login();
+    });
+
     // Llamar a la función al cargar la página
     handleWindowSize();
 
     // Agregar un listener para manejar cambios en el tamaño de la ventana
     window.addEventListener('resize', handleWindowSize);
+
+    function login() 
+    {
+        var username = document.getElementById('floatingInput').value;
+        var password = document.getElementById('floatingPassword').value;
+
+        // Aquí deberías realizar la verificación del usuario y contraseña.
+
+        if (username === 'AndresYepez' && password === 'Andres123') 
+        {
+            alert('Inicio de sesión exitoso');
+            // Redirigir a principal.html
+            window.location.replace('principal.html');
+        } 
+        else 
+        {
+            alert('Credenciales incorrectas');
+        }
+    }
 });

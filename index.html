@@ -10,10 +10,7 @@
     <header> 
         <div class="container">
             <div class="headerBt d-flex justify-content-center py-3 mb-3 navbar">
-                <div class="bi">
-                    <img src="img/menu-hamburguesa.png" alt="menu" class="bi me-2" width="32" height="32">
-                </div>
-                <div>
+                <div class="d-flex justify-content-center">
                     <a href="index.html" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                         <span class="fs-4">BiblioUSM</span>
                     </a>
@@ -31,15 +28,15 @@
                 <h1 class="h3 fw-normal text-center">Iniciar sesion</h1>
             </div>    
             <div class="form-floating py-2 px-4">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
-                <label class="px-5" for="floatingInput">Email</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="Usuario" required>
+                <label class="px-5" for="floatingInput">Usuario</label>
             </div>
             <div class="form-floating py-2 px-4">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                 <label class="px-5" for="floatingPassword">Contraseña</label>
             </div>
             <div class="py-2 d-flex justify-content-center buttonResponsive">
-                <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit">Iniciar sesion</button>
+                <button class="btn btn-primary w-40 py-2 px-2 m-2" id="loginButton" type="submit">Iniciar sesion</button>
                 <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit"><a class="nav-link" href="crearCuenta.html">Crear cuenta</a></button>
             </div>
         </form>
