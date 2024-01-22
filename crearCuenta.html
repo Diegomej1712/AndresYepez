@@ -20,7 +20,7 @@
     </header>  
 
     <main class="container d-flex justify-content-center form-signin w-100 m-auto">
-        <form class="formResponsive w-50 d-flex justify-content-center flex-column">
+        <form action="http://localhost:5000/registro" method="POST" class="formResponsive w-50 d-flex justify-content-center flex-column">
             <div class="d-flex justify-content-center">
                 <img class="align-items-center d-flex" src="img/acceso.png" alt="" width="72" height="72">
             </div>  
@@ -28,27 +28,31 @@
                 <h1 class="h3 fw-normal text-center">Crear cuenta</h1>
             </div>    
             <div class="form-floating py-2 px-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
-                <label class="px-5" for="floatingInput">Nombre</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario" required>
+                <label class="px-5" for="usuario">Usuario</label>
             </div>
             <div class="form-floating py-2 px-4">
-                <input type="text" class="form-control" id="floatingInput" placeholder="lastname" required>
-                <label class="px-5" for="floatingInput">Apellido</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" required>
+                <label class="px-5" for="nombre">Nombre</label>
             </div>
             <div class="form-floating py-2 px-4">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
-                <label class="px-5" for="floatingInput">Email</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="apellido" required>
+                <label class="px-5" for="apellido">Apellido</label>
             </div>
             <div class="form-floating py-2 px-4">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label class="px-5" for="floatingPassword">Contraseña</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                <label class="px-5" for="email">Email</label>
             </div>
             <div class="form-floating py-2 px-4">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Cedula" required>
-                <label class="px-5" for="floatingInput">Cedula</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="contraseña" required>
+                <label class="px-5" for="contraseña">Contraseña</label>
+            </div>
+            <div class="form-floating py-2 px-4">
+                <input type="text" class="form-control" id="cedula" name="cedula" placeholder="cedula" required>
+                <label class="px-5" for="cedula">Cedula</label>
             </div>
             <div class="py-2 d-flex justify-content-center buttonResponsive">
-                <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit"><a class="nav-link" href="iniciarSesion.html">Crear cuenta</a></button>
+                <button class="btn btn-primary w-40 py-2 px-2 m-2" type="submit"><a class="nav-link" href="index.html">Crear cuenta</a></button>
             </div>
         </form>
     </main>

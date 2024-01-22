@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function()
 {
     const formResponsive = document.querySelector('.formResponsive');
     const buttonResponsive = document.querySelector('.buttonResponsive');
-    const loginButton = document.getElementById('loginButton');
 
     // Función para manejar cambios en el tamaño de la ventana
     function handleWindowSize() 
