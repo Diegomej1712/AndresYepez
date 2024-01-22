@@ -31,7 +31,13 @@
 
     <main>
         <div class="container">
-            <ul class="list-unstyled row row-cols-1 py-5">
+            <form id="searchForm" class="py-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar en la biblioteca..." id="searchInput">
+                    <button class="btn btn-primary" type="button" onclick="realizarBusqueda()">Buscar</button>
+                </div>
+            </form>
+            <ul id="archivoList" class="list-unstyled row row-cols-1 py-5">
                 <div class="col col-md-4 py-3 px-3">
                     <div class="d-flex justify-content-center align-items-center">
                         <a href="Biblioteca/4to semestre - Redacción..pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
@@ -41,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Desarrollo de medios institucionales.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -49,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Fundamentos de Economía - La ciencia económica..pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -57,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/GESTIÓN PUBLICITARIA.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -65,7 +71,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Historia Contemporánea América - SURINAME.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -73,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Infografía EMBARAZO PRECOZ - Informativo III.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -81,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Informativo II - NOTICIA..pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -89,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Informativo II - Resumen informativo..pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -97,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Periodismo Avanzado - REPORTAJE.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -105,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Redacción III - Universidad a solas..pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -113,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col col-md-4 py-3 px-3">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center img">
                         <a href="Biblioteca/Reportaje - Periodisto Avanzado.docx.pdf" class="d-flex justify-content-center"><img src="img/archivo-pdf.png" class="iconBiblioteca" alt="archivo1"></a>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -145,5 +151,6 @@
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script src="busqueda.js"></script>
 </body>
 </html>
