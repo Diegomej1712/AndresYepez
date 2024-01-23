@@ -58,6 +58,7 @@ function modal() {
                             <h5><a href="principal.html" class="nav-link py-2">Inicio</a></h5>
                             <h5><a href="biblioteca.html" class="nav-link py-2">Biblioteca</a></h5>
                             <h5><a href="contacto.html" class="nav-link py-2">Contacto</a></h5>
+                            <h5><a href="index.html" class="nav-link py-2">Cerrar sesión</a></h5>
                         </div>
                     </div>
                 </div>
